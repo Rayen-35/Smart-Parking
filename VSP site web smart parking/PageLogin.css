@@ -1,0 +1,100 @@
+body{background-image: url(parking_noir.png);
+  background-attachment: fixed;
+}
+.banner {
+    backdrop-filter: blur(20px);
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    animation-name: slideIn;
+    animation-duration: 1s;
+  }
+  @keyframes slideIn {
+    from {
+    transform: translateX(-100%);
+    }
+    to {
+    transform: translateX(0);
+    }
+  }
+  .banner h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  .banner p {
+    font-size: 24px;
+    margin: 0;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px;
+    padding: 80px;
+    border: 3px double  #fcf9f9;
+    backdrop-filter: blur(20px);
+    color : #a19e9e;
+    border-radius: 100px;
+    }
+  
+#par{font-family:  sans-serif;font-size:20px;color : rgb(247, 247, 248) ;}
+  
+input {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: none solid #282727;
+      border-radius: 4px;
+      font-size: 16px;
+      width: 30%;
+      height: 55px;
+      outline: none;
+      transition: .5s;
+    }
+#valider {
+    background-color: #0814b8;
+    position: relative;
+    display: inline-block;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    color: beige;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solide rgb(8, 8, 8);
+    padding: 10px 30px;
+    transition: color 1s, box-shadow 1s ;
+    z-index: 1;
+    overflow: hidden; }
+#valider::before{
+      content:'';
+      position: absolute;
+      top:0;left:-50px;
+      width:0;height: 100%;
+      background: #0814b8;
+      transform: skewX(35 deg);
+      transition: 1s;
+      z-index: -1;
+     }
+#valider:hover:before {width: 100%;}
+     
+#valider:hover {
+      transition-delay: 0s,1s;
+      background-color: #414242;
+      box-shadow: 0 0 10px blue ,
+                  0 0 20px blue ,
+                  0 0 40px blue ,
+                  0 0 80px blue ,
+                  0 0 160px blue ;
+    }
+h2 {
+      margin-bottom: 20px;
+      font-family: sans-serif;
+    }
+#inscrit {
+      font-size: 27px;
+      color: #f1d30e;
+    }
+#inscrit:hover{
+      color: #e30808;
+   }
+input:valid~label{top: -5px;}

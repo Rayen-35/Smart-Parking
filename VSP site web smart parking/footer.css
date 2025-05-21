@@ -1,0 +1,23 @@
+footer {
+ margin: 0;
+ bottom: 100%; 
+ width: 100%;
+ left: 0; 
+ right: 0; 
+ background-color: #222121;
+ font-family: 'Tajawal', sans-serif;
+}
+
+footer a {
+ color: #fff; 
+ 
+}
+footer a:hover {
+ color: #e30808; 
+}
+#paragraphe{width: 300px;font-size:20px;}
+#copyr{margin-top:90px;margin-left: 0px;width: 400px;font-size:20px;}
+#style{margin-left: 100px;margin-top: 16px;font-family:  sans-serif;}
+#social_media {font-family: 'Tajawal', sans-serif; font-size:25px;}
+#style2{margin-left: 100px;margin-top: 16px;font-family:  sans-serif;}
+#contact{font-family: 'Tajawal', sans-serif; font-size:25px; }

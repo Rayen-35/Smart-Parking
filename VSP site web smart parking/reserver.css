@@ -1,0 +1,119 @@
+.banner {
+        background-color: #0e0ba6;
+        color: #fff;
+        text-align: center;
+        padding: 50px;
+        animation-name: slideIn;
+        animation-duration: 1s;
+      } 
+      @keyframes slideIn {
+        from {
+        transform: translateX(-100%);
+        }
+        to {
+        transform: translateX(0);
+        }
+      }
+      .banner h1 {
+        font-size: 48px;
+        margin: 0;
+      }
+      .banner p {
+        font-size: 24px;
+        margin: 0;
+      }
+form {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+        border: 3px double  #050505;
+        background-color: #f4f4fc;
+        color : #585858;
+        }
+#date1{   margin-bottom: 20px;
+          padding: 10px;
+          border: none solid #282727;
+          border-radius: 4px;
+          font-size: 16px;
+          width: 30%;
+          height: 55px;
+          outline: none;
+          transition: .5s;}
+
+#date2{   margin-bottom: 20px;
+          padding: 10px;
+          border: none solid #282727;
+          border-radius: 4px;
+          font-size: 16px;
+          width: 30%;
+          height: 55px;
+          outline: none;
+          transition: .5s;}
+
+#heure1{  margin-bottom: 20px;
+          padding: 10px;
+          border: none solid #282727;
+          border-radius: 4px;
+          font-size: 16px;
+          width: 30%;
+          height: 55px;
+          outline: none;
+          transition: .5s;}
+
+#heure2{  margin-bottom: 20px;
+          padding: 10px;
+          border: none solid #282727;
+          border-radius: 4px;
+          font-size: 16px;
+          width: 30%;
+          height: 55px;
+          outline: none;
+          transition: .5s;}
+
+#annuler{   background-color: #f1f1f4;
+            font-size: 1.5em;
+            letter-spacing: .1em;
+            color: rgb(79, 78, 78);
+            text-decoration: none;
+            border: 2px solide rgb(8, 8, 8);
+            transition: color 1s, box-shadow 1s ;
+            z-index: 1;overflow: hidden;
+            height: 60px;
+            width:180px;}
+
+#valider{
+          background-color: #0814b8;
+          font-size: 1.5em;
+          letter-spacing: .1em;
+          color: beige;
+          text-decoration: none;
+          border: 2px solide rgb(8, 8, 8);
+          transition: color 1s, box-shadow 1s ;
+          z-index: 1;
+          overflow: hidden;
+          height: 60px;
+          width:180px; }
+
+#valider::before{
+            content:'';
+            position: absolute;
+            top:0;left:-50px;
+            width:0;
+            height: 100%;
+            background: #0814b8;
+            transform: skewX(35 deg);
+            transition: 1s;
+            z-index: -1;
+           }
+#valider:hover:before {width: 100%;}
+           
+#valider:hover {
+            transition-delay: 0s,1s;
+            background-color: #414242;
+            box-shadow: 0 0 10px blue ,
+                        0 0 20px blue ,
+                        0 0 40px blue ,
+                        0 0 80px blue ,
+                        0 0 160px blue ;
+          }

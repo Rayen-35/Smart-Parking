@@ -1,0 +1,107 @@
+ body{background-image: url(parking_noir.png);
+    background-attachment: fixed;
+  }
+  .banner {
+    backdrop-filter: blur(20px);
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    animation-name: slideIn;
+    animation-duration: 1s;
+  }
+  @keyframes slideIn {
+    from {
+    transform: translateX(-100%);
+    }
+    to {
+    transform: translateX(0);
+    }
+  }
+  .banner h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  .banner p {
+    font-size: 24px;
+    margin: 0;
+  } 
+
+#form-compte {
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+  padding: 100px;
+  border: 3px double  #fcf9f9;
+  backdrop-filter: blur(20px);
+  color : #a19e9e;
+  border-radius: 100px;}
+
+#submit {
+    background-color: #0814b8;
+    position: relative;display: inline-block;font-size: 1.5em;letter-spacing: .1em;color: beige;text-decoration: none;text-transform: uppercase;border: 2px solide rgb(8, 8, 8);
+    padding: 10px 30px;transition: color 1s, box-shadow 1s ;z-index: 1;overflow: hidden; }
+#submit::before{
+    content:'';position: absolute;top:0;left:-50px;width:0;height: 100%;background: #0814b8;transform: skewX(35 deg);transition: 1s;z-index: -1;
+   }
+#submit:hover:before {width: 100%;}
+#submit:hover {
+    transition-delay: 0s,1s;
+    background-color: #414242;
+    box-shadow: 0 0 10px blue ,
+                0 0 20px blue ,
+                0 0 40px blue ,
+                0 0 80px blue ,
+                0 0 160px blue ;
+  }
+#nom{  margin-bottom: 20px;
+  padding: 10px;
+  border: none solid #282727;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 50%;
+  height: 55px;
+  outline: none;
+  transition: .5s;}
+
+#prenom{  margin-bottom: 20px;    
+    padding: 10px;
+    border: none solid #282727;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 50%;
+    height: 55px;
+    outline: none;
+    transition: .5s;}
+
+#matricule{  margin-bottom: 20px;
+      padding: 10px;
+      border: none solid #282727;
+      border-radius: 4px;
+      font-size: 16px;
+      width: 50%;
+      height: 55px;
+      outline: none;
+      transition: .5s;}
+
+#email{  margin-bottom: 20px;
+        padding: 10px;
+        border: none solid #282727;
+        border-radius: 4px;
+        font-size: 16px;
+        width: 50%;
+        height: 55px;
+        outline: none;
+        transition: .5s;}
+
+#password{  margin-bottom: 20px;
+          padding: 10px;
+          border: none solid #282727;
+          border-radius: 4px;
+          font-size: 16px;
+          width: 50%;
+          height: 55px;
+          outline: none;
+          transition: .5s;}
+         
+
+         
